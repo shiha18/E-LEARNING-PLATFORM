@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Detail</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EduPlatform</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="course-detail">
+    <h2>Intro to JavaScript</h2>
+    <video width="720" controls>
+      <source src="assets/js-intro.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+
+    <h3>Lessons</h3>
+    <ul class="lessons">
+      <li><input type="checkbox" onclick="updateProgress()"> Variables & Types</li>
+      <li><input type="checkbox" onclick="updateProgress()"> Functions</li>
+      <li><input type="checkbox" onclick="updateProgress()"> DOM Manipulation</li>
+    </ul>
+
+    <div id="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
